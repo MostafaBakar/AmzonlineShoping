@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<style>
+
+    /* ---------- Our font ---------- */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+    /* ---------- About the page ---------- */
+    * {
+        font-family: 'Poppins', sans-serif;
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    :root {
+
+        --main-color: #118AB2;
+        --dark-color: #073B4C;
+
+        --Crimson: #EF476F;
+
+        --white: #fff;
+        --black: #000;
+
+    }
+
+    /* ---------- Navegation bar ---------- */
+    header {
+        width: 100%;
+        padding-top: 5px;
+        z-index: 1000;
+    }
+
+    /* ---------- Header bar ---------- */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--white);
+        padding: 15px 200px;
+    }
+
+    /* ---------- Left Side ---------- */
+    .header-left {
+        display: flex;
+    }
+
+    .logo {
+        height: 30px;
+        width: 95px;
+    }
+
+    .search-box {
+        padding: 10px;
+        margin-left: 25px;
+        border: 1px solid var(--main-color);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        font-size: 0.85em;
+        width: 500px;
+        height: 30px;
+    }
+
+    .search-icon {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .search-icon:hover {
+        cursor: pointer;
+    }
+
+    /* ---------- Right Side ---------- */
+    .header-right {
+        display: flex;
+    }
+
+    .header-right img {
+        margin-left: 30px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .logo:hover {
+        opacity: 0.75;
+        cursor: pointer;
+    }
+
+    .header-right img:hover {
+        opacity: 0.75;
+        cursor: pointer;
+    }
+
+    /* ---------- Categories bar ---------- */
+    .categories {
+        display: flex;
+        background-color: var(--main-color);
+        padding: 0 200px;
+        justify-content: center;
+    }
+
+    .categories a {
+        color: var(--white);
+        padding: 10px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    .categories a:hover {
+        background-color: var(--dark-color);
+        color: var(--white);
+    }
+
+    @media (max-width:1500px) {
+        .header {
+            padding: 15px 100px;
+        }
+
+        .search-box {
+            width: 350px;
+        }
+
+        .categories {
+            padding: 0 50px;
+        }
+    }
+
+
+    @media (max-width:1000px) {
+        .header {
+            padding: 15px 50px;
+
+        }
+
+        .search-box {
+            width: 250px;
+        }
+
+        .categories {
+            font-size: 0.85em;
+        }
+    }
+
+    @media (max-width:900px) {
+
+        .categories {
+            padding: 0 15px;
+        }
+
+        .categories a {
+            padding: 10px;
+        }
+
+    }
+
+
+    @media (max-width:800px) {
+        .search-box {
+            display: none;
+        }
+
+        .search-icon {
+            display: none;
+        }
+
+        .categories {
+            font-size: 0.75em;
+            padding: 0 5px;
+        }
+
+        .categories a {
+            padding: 5px;
+        }
+    }
+
+    @media (max-width:575px) {
+
+        .categories {
+            display: none;
+        }
+    }
+
+    @media (max-width:500px) {
+        .header-left {
+            display: none;
+        }
+
+        .header {
+            justify-content: center;
+        }
+
+    }
+
+    /* ---------- Footer ---------- */
+
+    .footer {
+            background-color: var(--main-color);
+            padding: 50px;
+        }
+
+        .footer .FooterContent {
+            display: flex;
+            justify-Content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .footer .footerCart {
+            margin: 25px;
+            width: 20em;
+            overflow: hidden;
+            border-radius: 0;
+        }
+
+        .footer .info {
+            display: flex;
+            justify-Content: center;
+            color: var(--white);
+            margin: 0;
+            font-size: 1em;
+        }
+
+        .footer .info p {
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .footer .info a {
+            text-decoration: none;
+            color: var(--white);
+        }
+
+        .footer .info a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width:1200px) {
+            .footer .footerCart {
+                font-size: 0.8em;
+                margin: 0;
+            }
+
+        }
+
+        @media (max-width:850px) {
+            .footer .footerCart {
+                font-size: 0.7em;
+
+            }
+
+        }
+
+        @media (max-width:850px) {
+            .footer .footerCart {
+                font-size: 0.6em;
+
+            }
+
+        }
+
+        @media (max-width:650px) {
+            .footer .footerCart {
+                display: none;
+
+            }
+        }
+
+
+</style>
+
+<body>
+
+    <header>
+
+        <div class="header">
+            <div class="header-left">
+                <img class="logo" src="ImageIcons/AMZ New Logo.png">
+                <input class="search-box" type="text" placeholder="What are you looking for?">
+                <img class="search-icon" src="ImageIcons/search-reversed.png">
+            </div>
+            <div class="header-right">
+                <a href="../login/login.php" ><img style="margin-left: 0px;" title="Profile" src="ImageIcons/profile-user.png"></a>
+                <a href="..//Cart/cart.php" ><img title="Cart" src="ImageIcons/shopping-cart.png"><a>
+                <a href="..//wish/wish.php" ><img title="Wish List" src="ImageIcons/wish-list-filled.png"></a>
+                <a href="..//contact/index.php" ><img title="Contact Us" src="ImageIcons/contact-us.png"></a>
+                <a href="..//About Us/index.html" ><img title="About Us" src="ImageIcons/about-us.png"></a>
+            </div>
+        </div>
+
+        <div class="categories">
+            <a href="#electronics">Electronics</a>
+            <a href="#fashion">Fashion</a>
+            <a href="#home-kitchen">Home & Kitchen</a>
+            <a href="#beauty-health">Beauty & Health</a>
+            <a href="#sports-fitness">Sports & Fitness</a>
+            <a href="#supermarket">Supermarket</a>
+        </div>
+
+    </header>
+    
+    <div class="content1">
+
+        <div class="card1">
+            <div class="info1">
+                <p>SHOPPING CART</p>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="content">
+        <table>
+            <tr>
+                <th class="pp">Product</th>
+
+                <th>Quantity</th>
+                <th>Subtotal</th>
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="product-info">
+                        <img class="photo" src="tablet.jpg" alt="">
+                        <div>
+                            <p class="product-name">iPad Pro 2021</p>
+                            <small>Price: $1800.00 </small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+
+                <td><input type="number" value="1" min="1"></td>
+                <td><small>$1800.00</small></td>
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="product-info">
+                        <img class="photo" src="camera.jpg" alt="">
+                        <div>
+                            <p class="product-name">Canon ELPH</p>
+                            <small>Price: $1000.00 </small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+
+                <td><input type="number" value="1" min="1"></td>
+                <td><small>$1000.00</small></td>
+
+            </tr>
+            
+
+
+            </tr>
+        </table>
+
+
+    </div>
+
+    </div>
+    <div class="content2">
+
+        <div class="card2">
+
+            <div class="pragraph2">
+                <p>SUBTOTAL: $2800.00 </p>
+            </div>
+
+            <div class="info2">
+                <a href="">Proceed to check</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <section class="footer" id="footer">
+
+        <div class="FooterContent">
+
+            <div class="footerCart">
+
+                <div class="info">
+                    <p>Get to Know Us</p>
+                </div>
+                <div class="info">
+                    <a href="#">Careers</a>
+                </div>
+                <div class="info">
+                    <a href="#">About Us</a>
+                </div>
+                <div class="info">
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="info">
+                    <a href="#">Our Policies</a>
+                </div>
+
+            </div>
+
+            <div class="footerCart">
+
+                <div class="info">
+                    <p>Make Money with Us</p>
+                </div>
+                <div class="info">
+                    <a href="#">Sell products on AMZ</a>
+                </div>
+                <div class="info">
+                    <a href="#">Sell on AMZ Business</a>
+                </div>
+                <div class="info">
+                    <a href="#">Sell apps on AMZ</a>
+                </div>
+
+            </div>
+
+
+            <div class="footerCart">
+
+                <div class="info">
+                    <p>Let Us Help You</p>
+                </div>
+                <div class="info">
+                    <a href="#">Manage Your Account</a>
+                </div>
+                <div class="info">
+                    <a href="#">Manage Your Cart</a>
+                </div>
+                <div class="info">
+                    <a href="#">Manage Your Wish List</a>
+                </div>
+                <div class="info">
+                    <a href="#">Returns & Replacements</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section style="background-color: #073B4C; padding: 35px;" class="footer" id="footer">
+
+        <div class="FooterContent">
+
+            <!-- <p class="description">Our mission is to be Earth's most customer-centric company. This is what unites AMZ across teams and geographies as we are all striving to delight our customers and make their lives easier, one innovative product, service, and idea at a time.</p> -->
+            <p style="text-transform: uppercase; font-weight: 700; color: white;">@2022 AMZ, All Rights Reserved</p>
+
+        </div>
+
+    </section>
+    
+</body>
+
+</html>

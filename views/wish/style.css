@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+
+    --main-color:#118AB2;
+    --dark-color:#073B4C;
+
+
+    --Crimson: #EF476F;
+
+    --white: #fff;
+    --gray: #d3d3d3
+
+    --black: #000;
+
+}
+
+.content1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: lightgre
+}
+
+.card1{
+    justify-content: center;
+    margin: 10px;
+    width: 25em;
+}
+
+.pra1{
+    display: flex;
+    justify-content: center;
+}
+
+.info1{
+    font-weight: 700;
+
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    margin: 15px;
+}
+.content{
+    position: relative;
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+table{
+    margin-left: 50PX;
+    margin-right: 50PX;
+    padding: 300px;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f1f1f1;
+    border-radius: 20PX;
+}
+.product-info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color:aliceblue ;
+    background-color: var(--main-color);
+    font-weight: normal;
+
+}
+td{
+    padding: 10px 5px;
+
+}
+td input{
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: var(--main-color);
+    font-size: 15px;
+    text-decoration: none;
+}
+td img{
+    width: 160px;
+    height: 160px;
+    margin-right: 20px;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+.name{
+    color: #2296c3;
+    width: 230px;
+    padding-left: 10px;
+    margin-left: 30% ;
+    font-size: large;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.pp{
+    padding-left:  30px;
+}
+
+/* .content{
+    
+} */
+.product-name{
+    font-weight: bolder;
+    font-size: large;
+}
+small{
+    font-size: large;
+}
+.content2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card2{
+    margin: 30px;
+    width: 25em;
+    background-color: #f1f1f1; /* Grey background color */
+
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.pragraph2{
+    display: flex;
+    justify-content: center;
+}
+
+.info2{
+    font-weight: 300;
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+    margin: 15px;
+}
+
+.info2 a{
+    font-size: 1em;
+
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+@media(max-width:600px){
+table{
+    margin: 0;
+}
+}

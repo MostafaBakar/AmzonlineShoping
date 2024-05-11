@@ -1,0 +1,183 @@
+/* ---------- Our font ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ---------- About the page ---------- */
+* {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --main-color: #118AB2;
+    --dark-color: #073B4C;
+
+    --Crimson: #EF476F;
+
+    --white: #fff;
+    --black: #000;
+
+}
+
+/* ---------- Main section ---------- */
+.mySlides {
+    width: 100%;
+}
+
+/* ---------- Electronics section ---------- */
+.title {
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    font-size: 1.8em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 25px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 25px;
+    width: 20em;
+    
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
+}
+
+.image img {
+    width: 100%;
+}
+
+.info {
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+    margin: 15px;
+}
+
+.card:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+/* ---------- Fashion section ---------- */
+.fashion {
+    background-color: var(--dark-color);
+    padding: 50px 0 100px 0;
+    margin: 25px 0 0 0;
+}
+
+.fashion .title {
+    color: var(--white);
+    margin-bottom: 35px;
+}
+
+.fashion .card {
+    background-color: var(--white);
+    box-shadow: none;
+    border-radius: 0;
+    width: 25em;
+    margin-top: 35px;
+}
+
+/* ---------- Beauty deals section ---------- */
+.beauty-deals .title {
+    font-weight: 700;
+}
+
+.beauty-deals .title span {
+    color: var(--Crimson);
+}
+
+.beauty-deals .card {
+    border-radius: 0 0 0 0;
+    width: 15em;
+}
+
+/* ---------- Home & kitchen section ---------- */
+.home-kitchen .title-img {
+    margin: 30px 0;
+    width: 100%;
+}
+
+.home-kitchen .card {
+    border-radius: 0;
+    box-shadow: 0 0 0;
+    width: 45em;
+    margin: 10px;
+}
+
+
+/* ---------- Beauty & health section ---------- */
+.beauty-health {
+    background-color: var(--Crimson);
+    padding: 50px 0 100px 0;
+    margin-top: 50px;
+}
+
+.beauty-health .title {
+    color: var(--white);
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.beauty-health .card {
+    background-color: var(--white);
+    border-radius: 0;
+    width: 15em;
+}
+
+/* ---------- Sports & fitness section ---------- */
+.sports-fitness {
+    background-color: var(--dark-color);
+    padding: 0 0 50px 0;
+    margin-top: 50px;
+}
+
+.sports-fitness .title {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 2.5em;
+    margin-top: 25px;
+}
+
+.sports-fitness .card {
+    border-radius: 0;
+    width: 12em;
+    box-shadow: 0 0 0;
+    margin: 65px;
+}
+
+/* ---------- Supermarket section ---------- */
+.supermarket {
+    padding: 0 0 50px 0;
+    margin-top: 75px;
+}
+
+.mySlidess {
+    width: 100%;
+}
+
+.supermarket .title {
+    font-weight: 700;
+    margin: 25px;
+}
+
+.supermarket .card {
+    border-radius: 0;
+    box-shadow: 0 0 0;
+    margin: 25px;
+    margin-bottom: 0;
+}
